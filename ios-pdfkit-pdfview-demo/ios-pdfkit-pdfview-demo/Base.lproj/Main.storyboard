@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ios_pdfkit_pdfview_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u1w-S0-VaB" customClass="PDFView">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="707"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="ekL-4r-6Ov">
+                                <rect key="frame" x="442" y="715" width="140" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lEU-Lc-6YE">
+                                        <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="i6M-qb-80U"/>
+                                            <constraint firstAttribute="width" constant="45" id="li1-tx-L9A"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="back_button"/>
+                                        <connections>
+                                            <action selector="didTapBackButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SVC-Tp-W5j"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iie-6W-YPL">
+                                        <rect key="frame" x="95" y="0.0" width="45" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="45" id="0P3-pv-9N1"/>
+                                            <constraint firstAttribute="height" constant="45" id="q5s-lF-ALT"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="next_button"/>
+                                        <connections>
+                                            <action selector="didTapNextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DHI-Lx-pWu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ekL-4r-6Ov" firstAttribute="top" secondItem="u1w-S0-VaB" secondAttribute="bottom" constant="8" id="0JV-Lc-Bq9"/>
+                            <constraint firstItem="u1w-S0-VaB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="M3m-JA-8en"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ekL-4r-6Ov" secondAttribute="bottom" constant="8" id="eFh-zU-5UH"/>
+                            <constraint firstItem="u1w-S0-VaB" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="iI1-XG-nfx"/>
+                            <constraint firstItem="u1w-S0-VaB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qx0-k0-yNK"/>
+                            <constraint firstItem="ekL-4r-6Ov" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xpJ-Nm-EKp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="pdfView" destination="u1w-S0-VaB" id="b2H-qy-RHc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.5" y="31.25"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back_button" width="112" height="112"/>
+        <image name="next_button" width="112" height="112"/>
+    </resources>
+</document>
