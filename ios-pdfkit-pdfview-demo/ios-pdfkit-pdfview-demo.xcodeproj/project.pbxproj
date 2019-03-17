@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64FE0C93223E12D20080BC3E /* PDFViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FE0C92223E12D20080BC3E /* PDFViewer.swift */; };
 		B6E7F3491FA62D8F00DAF535 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E7F3481FA62D8F00DAF535 /* AppDelegate.swift */; };
 		B6E7F34B1FA62D8F00DAF535 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E7F34A1FA62D8F00DAF535 /* ViewController.swift */; };
 		B6E7F34E1FA62D8F00DAF535 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6E7F34C1FA62D8F00DAF535 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		64FE0C92223E12D20080BC3E /* PDFViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewer.swift; sourceTree = "<group>"; };
 		B6E7F3451FA62D8E00DAF535 /* ios-pdfkit-pdfview-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-pdfkit-pdfview-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E7F3481FA62D8F00DAF535 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6E7F34A1FA62D8F00DAF535 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64FE0C91223E12BD0080BC3E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				64FE0C92223E12D20080BC3E /* PDFViewer.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		B6E7F33C1FA62D8E00DAF535 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +89,7 @@
 		B6E7F3471FA62D8E00DAF535 /* ios-pdfkit-pdfview-demo */ = {
 			isa = PBXGroup;
 			children = (
+				64FE0C91223E12BD0080BC3E /* Views */,
 				B6E7F36A1FA6327200DAF535 /* Resources */,
 				B6E7F3481FA62D8F00DAF535 /* AppDelegate.swift */,
 				B6E7F34A1FA62D8F00DAF535 /* ViewController.swift */,
@@ -215,6 +226,7 @@
 			files = (
 				B6E7F34B1FA62D8F00DAF535 /* ViewController.swift in Sources */,
 				B6E7F3491FA62D8F00DAF535 /* AppDelegate.swift in Sources */,
+				64FE0C93223E12D20080BC3E /* PDFViewer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
