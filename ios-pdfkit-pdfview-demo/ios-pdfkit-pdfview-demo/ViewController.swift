@@ -117,7 +117,7 @@ class ViewController: UIViewController {
                           bottom: CGFloat,
                           right: CGFloat) {
         pdfView.displaysPageBreaks = true
-        pdfView.pageBreakMargins = UIEdgeInsetsMake(top, left, bottom, right)
+        pdfView.pageBreakMargins = UIEdgeInsets.init(top: top, left: left, bottom: bottom, right: right)
     }
     
     /// スクロールの方向を設定する
